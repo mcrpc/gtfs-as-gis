@@ -1,12 +1,8 @@
 # run stop_frequency.R first when updated data is received
-
-rm(list=ls())
-
 library(tidytransit)
 library(tidyverse)
 library(sf)
-
-setwd("G:/_Projects/Connect_GTFS/")
+library(here)
 
 ct <- read_gtfs("data/7.1.19.zip",local=TRUE)
 routes_sf <- get_route_geometry(ct) %>%
