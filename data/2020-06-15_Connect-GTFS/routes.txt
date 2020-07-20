@@ -1,0 +1,17 @@
+route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+1e118e7,connect-transit,,OG,3,ff8c00,ffffff
+2ac0103,connect-transit,,RD,3,AD0101,ffffff
+33dc9e2,connect-transit,RD,EX,3,AD0101,ffffff
+5c1d03f,connect-transit,,SV,3,708090,ffffff
+5f6350b,connect-transit,,PK,3,ff69b4,ffffff
+60d80e9,connect-transit,,PR,3,4e0963,ffffff
+66750c9,connect-transit,,TN,3,cd853f,ffffff
+7c212ed,connect-transit,,BN,3,ce5504,ffffff
+8bc80ea,connect-transit,,LM,3,5A8400,ffffff
+c03cdfd,connect-transit,,BL,3,0071ca,ffffff
+c93f31d,connect-transit,,GN,3,0d7215,ffffff
+f10e1ff,connect-transit,,GD,3,ffd700,ffffff
+f6b317d,connect-transit,,YW,3,ffcc00,ffffff
+fb92518,connect-transit,,AQ,3,049684,ffffff
+116e262,connect-transit,Lime,EX,3,0D7215,ffffff
+a13a95a,connect-transit,,GN1,3,0d7215,ffffff

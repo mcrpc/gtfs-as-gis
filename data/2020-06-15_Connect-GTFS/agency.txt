@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_fare_url,agency_lang,agency_email
+connect-transit,Connect Transit,http://www.connect-transit.com,America/Chicago,(309) 828-9833,http://www.connect-transit.com/fares/fares.asp,en,
