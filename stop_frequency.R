@@ -99,11 +99,12 @@ stops <- left_join(stops, stop_freq)
 cols <- unique(cbind(stop_times[2],stop_times[4]))
 joinData <- aggregate(route_long_name~stop_id, data = cols, paste, collapse = ",")
 stops <- left_join(stops, joinData)
-#stop_ids 1892303 (Uptown Station) and 2026561 (Market & Oak) have duplicate entries in the 1 July 2019 GTFS feed stops.txt for some reason
+# stop_ids 1892303 (Uptown Station) and 2026561 (Market & Oak) have duplicate entries in the 1 July 2019 GTFS feed stops.txt for some reason
+# (and it is very likely that future GTFS files will have duplicate stops because Connect Transit is sloppy like that)
 stops <- distinct(stops, stop_id, .keep_all = TRUE)
 
 stops_sf <- st_as_sf(stops,crs=4326,coords=c("stop_lon","stop_lat")) %>%
-  st_transform(3443) %>%
+  st_transform(3443) %>% # change this if a different CRS is desired. if you don't know what a CRS is, leave alone
   write_sf(here("output/ct_stops.shp"))
 
 spdf <- SpatialPointsDataFrame(coords = c(stops[4],stops[3]), data = stops, proj4string = CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"))
